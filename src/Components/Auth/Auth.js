@@ -106,6 +106,7 @@ class Auth extends Component {
                             <span style={{ color: "red" }}>{errors.email}</span>
                             <br />
                             <input name="password"
+                                type="password"
                                 placeholder="Password"
                                 className="form-control"
                                 value={values.password}
@@ -118,6 +119,7 @@ class Auth extends Component {
                                 <div>
                                     <input
                                         name="passwordConfirm"
+                                        type="password"
                                         placeholder="Confirm Password"
                                         className="form-control"
                                         value={values.passwordConfirm}
