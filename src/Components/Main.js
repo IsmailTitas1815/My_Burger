@@ -36,8 +36,8 @@ class Main extends Component {
         if (this.props.token === null) {
             routes = (
                 <Switch>
-                    <Route path="/login" component={Auth} />
-                    <Redirect to="/login" />
+                    <Route exact path="/" component={Auth} />
+                    <Route exact path="/login" component={Auth} />
                 </Switch>
             )
         }
